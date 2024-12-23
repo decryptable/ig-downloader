@@ -15,4 +15,4 @@ const InstagramDownloader = async (url: string): Promise<XdtShortcodeMedia> => {
   return await getInstagramData(url);
 };
 
-export default InstagramDownloader;
+export { InstagramDownloader };
