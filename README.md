@@ -32,7 +32,7 @@ yarn add ig-downloader
 
 ## 🚀 Usage
 
-See in [examples](/functions/index.InstagramDownloader.html) for more detailed usage.
+See in [examples](/ig-downloader/functions/index.InstagramDownloader.html) for more detailed usage.
 
 ---
 
