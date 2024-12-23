@@ -38,7 +38,7 @@ yarn add ig-downloader
 
 ## 🚀 Usage
 
-See in [examples](/ig-downloader/functions/index.InstagramDownloader.html) for more detailed usage.
+See in [example section](https://decryptable.github.io/ig-downloader/functions/index.InstagramDownloader.html#example) for more detailed usage.
 
 ---
 
