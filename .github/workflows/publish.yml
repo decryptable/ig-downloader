@@ -1,0 +1,76 @@
+name: Publish to npm and Build Documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Run tests
+      - name: Run tests
+        run: yarn test
+
+      # Build library
+      - name: Build TypeScript
+        run: yarn build
+
+      # Generate documentation
+      - name: Generate JSDoc
+        run: yarn docs
+
+      # Upload docs to GitHub Pages
+      - name: Deploy documentation to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
+
+  publish:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      # Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: 'https://registry.npmjs.org'
+
+      # Authenticate with npm
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install
+
+      # Publish to npm
+      - name: Publish to npm
+        run: yarn publish --non-interactive
