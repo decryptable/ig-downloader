@@ -13,10 +13,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/decryptable/ig-downloader.git"
