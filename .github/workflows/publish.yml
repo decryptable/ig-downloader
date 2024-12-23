@@ -86,6 +86,10 @@ jobs:
       - name: Build 🔨
         run: yarn build
 
+      # Verify dist contents
+      - name: Verify dist contents 🕵️
+        run: ls -R dist
+
       # Publish to npm
       - name: Publishing 🚀
         run: yarn publish
