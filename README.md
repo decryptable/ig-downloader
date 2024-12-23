@@ -1,5 +1,11 @@
 # 📸 Instagram Downloader
 
+![npm](https://img.shields.io/npm/v/ig-downloader)
+![GitHub Release](https://img.shields.io/github/v/release/decryptable/ig-downloader)
+![Build Status](https://img.shields.io/github/actions/workflow/status/decryptable/ig-downloader/publish.yml)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/decryptable/ig-downloader)
+
+
 **`ig-downloader`** is a powerful Node.js library for downloading and processing Instagram media data such as reels, posts, and stories with ease. 🚀
 
 ![Instagram Downloader GIF](https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif)
