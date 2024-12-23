@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "Node.js library for downloading and processing Instagram media data such as reels, posts, and stories with ease.",
   "main": "dist/index.js",
-  "repository": "https://github.com/decryptable/ig-downloader",
   "author": "decryptable",
   "license": "MIT",
   "readme": "README.md",
   "private": false,
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decryptable/ig-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/decryptable/ig-downloader/issues"
+  },
+  "homepage": "https://decryptable.github.io/ig-downloader/",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
