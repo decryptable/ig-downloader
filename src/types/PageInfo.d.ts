@@ -3,7 +3,7 @@
  * This interface provides details about the current pagination state, such as
  * whether there are more items to load and the position to resume loading.
  */
-export interface PageInfo {
+export type PageInfo = {
   /**
    * Indicates whether there is a subsequent page of items available.
    * If `true`, more items can be fetched; otherwise, the end of the list has been reached.

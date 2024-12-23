@@ -3,7 +3,7 @@
  * This interface provides information about the total count of media edges
  * and a preview of those edges.
  */
-export interface EdgeMediaPreview {
+export type EdgeMediaPreview = {
   /**
    * The total count of media edges.
    * This property represents the total number of media-related connections

@@ -1,4 +1,4 @@
-import { GraphqlResponse } from "../types/GraphqlResponse";
+import type { GraphqlResponse } from "../types/GraphqlResponse";
 
 /**
  * The function `getGraphqlResponse` sends a POST request to the Instagram GraphQL API with a payload

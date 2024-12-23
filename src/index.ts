@@ -1,4 +1,4 @@
-import { XdtShortcodeMedia } from "./types/XdtShortcodeMedia";
+import type { XdtShortcodeMedia } from "./types/XdtShortcodeMedia";
 import getInstagramData from "./utils/getInstagramData";
 
 /**
@@ -6,7 +6,7 @@ import getInstagramData from "./utils/getInstagramData";
  * on a given URL.
  * @param {string} url - The `url` parameter in the `InstagramDownloader` function is a string that
  * represents the URL of an Instagram post that you want to download.
- * @returns {XdtShortcodeMedia} The function `InstagramDownloader` is returning a Promise that resolves to an object of
+ * @returns {Promise<XdtShortcodeMedia>} The function `InstagramDownloader` is returning a Promise that resolves to an object of
  * type `XdtShortcodeMedia`.
  *
  * @includeExample src/examples/exampleUsage.ts

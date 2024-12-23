@@ -1,11 +1,11 @@
-import { Node } from "./Node";
+import type { Node } from "./Node";
 
 /**
  * Represents an edge in a graph, which connects nodes in the data structure.
  * This interface is typically used in GraphQL responses to represent
  * relationships between nodes.
  */
-export interface Edge {
+export type Edge = {
   /**
    * The node at the end of the edge.
    * This property contains the actual data or entity associated with the edge.

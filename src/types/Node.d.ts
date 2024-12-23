@@ -1,11 +1,11 @@
-import { User } from "./User";
+import type { User } from "./User";
 
 /**
  * Represents a node in a graph.
  * A node is a fundamental unit of a graph structure, containing associated data
  * and coordinates to describe its position in the graph.
  */
-export interface Node {
+export type Node = {
   /**
    * The user associated with the node.
    * This property links the node to a specific user entity.

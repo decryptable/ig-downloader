@@ -1,4 +1,4 @@
-import InstagramDownloader from "..";
+import { InstagramDownloader } from "..";
 
 /* The `const urls` array is storing two Instagram URLs. Each URL points to a specific Instagram post
 or reel. These URLs are used in the `fetchInstagramData` function to fetch data from Instagram using

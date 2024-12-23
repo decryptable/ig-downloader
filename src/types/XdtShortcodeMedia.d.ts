@@ -1,16 +1,16 @@
-import { ClipsMusicAttributionInfo } from "./ClipsMusicAttributionInfo";
-import { DisplayResource } from "./DisplayResource";
-import { EdgeMediaPreview } from "./EdgeMediaPreview";
-import { EdgeMediaToCaptionClass } from "./EdgeMediaToCaptionClass";
-import { EdgeMediaToParentComment } from "./EdgeMediaToParentComment";
-import { SharingFrictionInfo } from "./SharingFrictionInfo";
+import type { ClipsMusicAttributionInfo } from "./ClipsMusicAttributionInfo";
+import type { DisplayResource } from "./DisplayResource";
+import type { EdgeMediaPreview } from "./EdgeMediaPreview";
+import type { EdgeMediaToCaptionClass } from "./EdgeMediaToCaptionClass";
+import type { EdgeMediaToParentComment } from "./EdgeMediaToParentComment";
+import type { SharingFrictionInfo } from "./SharingFrictionInfo";
 
 /**
  * Represents the media object for a shortcode in Instagram.
  * This interface contains all metadata and related information
  * about a media item, such as videos, photos, or reels.
  */
-export interface XdtShortcodeMedia {
+export type XdtShortcodeMedia = {
   /**
    * The typename of the media object.
    * Typically indicates the type of media (e.g., "GraphImage", "GraphVideo").
@@ -361,4 +361,4 @@ export interface XdtShortcodeMedia {
    * @type {any[]}
    */
   pinned_for_users: any[];
-}
+};

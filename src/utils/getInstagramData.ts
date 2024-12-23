@@ -1,4 +1,4 @@
-import { XdtShortcodeMedia } from "../types/XdtShortcodeMedia";
+import type { XdtShortcodeMedia } from "../types/XdtShortcodeMedia";
 import generatePayload from "./generatePayload";
 import getGraphqlResponse from "./getGraphqlResponse";
 import getShortCode from "./getShortCode";
@@ -8,7 +8,7 @@ import getShortCode from "./getShortCode";
  * appropriately.
  * @param {string} url - The `url` parameter in the `getInstagramData` function is a string that
  * represents the URL of an Instagram post from which you want to fetch data.
- * @returns {XdtShortcodeMedia} The function `getInstagramData` is returning the `xdtShortcodeMedia` data from the
+ * @returns {Promise<XdtShortcodeMedia>} The function `getInstagramData` is returning the `xdtShortcodeMedia` data from the
  * Instagram API response after processing the provided URL.
  */
 const getInstagramData = async (url: string): Promise<XdtShortcodeMedia> => {

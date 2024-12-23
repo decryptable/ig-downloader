@@ -1,11 +1,11 @@
-import { PageInfo } from "./PageInfo";
+import type { PageInfo } from "./PageInfo";
 
 /**
  * Represents edges to parent comments in a graph-based structure.
  * This interface provides information about the comments on a media item,
  * including their count, pagination details, and individual comment edges.
  */
-export interface EdgeMediaToParentComment {
+export type EdgeMediaToParentComment = {
   /**
    * The total count of parent comments on the media item.
    * This property represents the number of top-level comments.

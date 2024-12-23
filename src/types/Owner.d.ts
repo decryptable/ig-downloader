@@ -3,7 +3,7 @@
  * This interface defines the properties associated with the owner, including their profile
  * information, account status, and relationships with the viewer.
  */
-export interface Owner {
+export type Owner = {
   /**
    * The unique identifier of the owner.
    * @type {string}
