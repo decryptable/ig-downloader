@@ -13,7 +13,7 @@ Thank you for considering contributing to **`ig-downloader`**! Your contribution
    Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/ig-downloader.git
+   git clone https://github.com/decryptable/ig-downloader.git
    cd ig-downloader
    ```
 
@@ -43,7 +43,7 @@ Thank you for considering contributing to **`ig-downloader`**! Your contribution
 
 ### Reporting Issues 🐛
 
-If you find a bug, please file an issue using the [GitHub Issues page](https://github.com/yourusername/ig-downloader/issues). Include:
+If you find a bug, please file an issue using the [GitHub Issues page](https://github.com/decryptable/ig-downloader/issues). Include:
 
 - A clear and descriptive title.
 - Steps to reproduce the issue.
@@ -52,7 +52,7 @@ If you find a bug, please file an issue using the [GitHub Issues page](https://g
 
 ### Suggesting Features ✨
 
-Have a feature idea? Open a [feature request issue](https://github.com/yourusername/ig-downloader/issues) with:
+Have a feature idea? Open a [feature request issue](https://github.com/decryptable/ig-downloader/issues) with:
 
 - A detailed description of the feature.
 - Use cases or examples.
@@ -131,7 +131,7 @@ If you see unclear, incomplete, or outdated information, feel free to submit a p
 
 ## 🤔 Need Help?
 
-If you have any questions about contributing, feel free to reach out by opening a discussion or sending an email to [contact@yourdomain.com](mailto:contact@yourdomain.com).
+If you have any questions about contributing, feel free to reach out by opening a discussion or sending an email to [hello@decryptable.dev](mailto:hello@decryptable.dev).
 
 ---
 
