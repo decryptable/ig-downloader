@@ -1,15 +1,17 @@
 {
   "name": "ig-downloader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js library for downloading and processing Instagram media data such as reels, posts, and stories with ease.",
-  "main": "dist/index.js",
+  "main": "lib/ig-downloader.js",
   "author": "decryptable",
   "license": "MIT",
   "readme": "README.md",
   "private": false,
-  "types": "dist/index.d.ts",
+  "types": "lib/ig-downloader.d.ts",
+  "type": "module",
   "files": [
     "dist",
+    "lib",
     "README.md",
     "LICENSE"
   ],
@@ -23,8 +25,8 @@
   "homepage": "https://decryptable.github.io/ig-downloader/",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "start": "node dist/ig-downloader.js",
+    "dev": "ts-node src/ig-downloader.ts",
     "example": "ts-node src/examples/exampleUsage.ts",
     "test": "jest",
     "docs": "typedoc",
@@ -32,6 +34,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
     "jest": "^29.7.0",

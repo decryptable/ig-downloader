@@ -3,7 +3,7 @@
  * details about the audio used in the clip, such as the artist, song name,
  * and audio handling settings.
  */
-export type ClipsMusicAttributionInfo = {
+export interface ClipsMusicAttributionInfo {
   /**
    * The name of the artist whose music is attributed in the clip.
    * @type {string}

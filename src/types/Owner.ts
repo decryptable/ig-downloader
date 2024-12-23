@@ -1,9 +1,11 @@
+import { EdgeFollowedByClass } from "./EdgeFollowedByClass";
+
 /**
  * Represents the owner of a media item, such as a user or entity that manages the content.
  * This interface defines the properties associated with the owner, including their profile
  * information, account status, and relationships with the viewer.
  */
-export type Owner = {
+export interface Owner {
   /**
    * The unique identifier of the owner.
    * @type {string}

@@ -3,7 +3,7 @@
  * This interface provides metadata or supplementary details that may
  * accompany the main response data.
  */
-export type Extensions = {
+export interface Extensions {
   /**
    * Indicates whether the response is final.
    * If `true`, the response is considered complete and no further updates

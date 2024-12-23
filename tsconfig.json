@@ -1,15 +1,15 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
+    "baseUrl": "src/",
+    "target": "es5",
+    "module": "commonjs",
     "declaration": true,
+    "sourceMap": true,
     "declarationMap": true,
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "types": ["jest", "node"],
+    "lib": ["es5"],
+    "outDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/__tests__", "dist", "src/examples"]
+  "include": ["src/ig-downloader.ts", "src/types", "src/utils"]
 }

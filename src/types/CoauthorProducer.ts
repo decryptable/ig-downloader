@@ -2,7 +2,7 @@
  * Represents a coauthor producer, providing details about a contributor
  * or collaborator associated with a piece of content.
  */
-export type CoauthorProducer = {
+export interface CoauthorProducer {
   /**
    * The unique identifier of the coauthor producer.
    * This ID is used to distinguish the coauthor from other users.

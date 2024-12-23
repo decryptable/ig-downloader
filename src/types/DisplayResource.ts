@@ -2,7 +2,7 @@
  * Represents a display resource, such as an image or video rendition,
  * typically used for rendering media in different resolutions or formats.
  */
-export type DisplayResource = {
+export interface DisplayResource {
   /**
    * The source URL of the display resource.
    * This URL points to the image or video file for this specific resource.

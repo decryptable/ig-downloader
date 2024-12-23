@@ -3,7 +3,7 @@
  * This interface provides details about the user's identity, profile, and
  * relationship with the current viewer.
  */
-export type User = {
+export interface User {
   /**
    * The full name of the user as displayed on their profile.
    * @type {string}

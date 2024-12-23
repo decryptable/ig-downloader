@@ -3,7 +3,7 @@
  * which is a streaming protocol that allows adaptive bitrate streaming
  * based on the user's network conditions and device capabilities.
  */
-export type DashInfo = {
+export interface DashInfo {
   /**
    * Indicates whether the media is eligible for DASH streaming.
    * If `true`, the media can be streamed using DASH, enabling adaptive bitrate playback.

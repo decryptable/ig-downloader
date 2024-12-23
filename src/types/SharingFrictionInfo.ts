@@ -2,7 +2,7 @@
  * Represents information about sharing friction, which refers to
  * restrictions or conditions applied to sharing content within an application.
  */
-export type SharingFrictionInfo = {
+export interface SharingFrictionInfo {
   /**
    * Indicates whether sharing friction should be applied.
    * If `true`, the user may encounter restrictions or prompts when attempting to share content.

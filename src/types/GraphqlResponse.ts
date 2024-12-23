@@ -1,12 +1,12 @@
-import type { Data } from "./Data";
-import type { Extensions } from "./Extensions";
+import { Data } from "./Data";
+import { Extensions } from "./Extensions";
 
 /**
  * Represents the response from a GraphQL query.
  * This interface encapsulates the main data, additional metadata, and
  * status information returned by the GraphQL API.
  */
-export type GraphqlResponse = {
+export interface GraphqlResponse {
   /**
    * The data returned by the GraphQL query.
    * This contains the primary payload requested by the client.
