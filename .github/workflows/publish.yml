@@ -1,4 +1,4 @@
-name: Publish to npm and Build Documentation
+name: Publish to npm and Build Documentation 📦️
 
 on:
   push:
@@ -11,69 +11,70 @@ permissions:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build and Test 🛠️
     runs-on: ubuntu-latest
 
     steps:
       # Checkout repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout code 🛫
+        uses: actions/checkout@v4
 
       # Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Change from '16' to '18'
+          node-version: '20.x' # Change from '18' to '20'
           cache: 'yarn'
 
       # Install dependencies
-      - name: Install dependencies
+      - name: Install dependencies 📦️
         run: yarn install
 
       # Run tests
-      - name: Run tests
+      - name: Run tests 🧪
         run: yarn test
 
       # Build library
-      - name: Build TypeScript
+      - name: Build TypeScript 🛠️
         run: yarn build
 
       # Generate documentation
-      - name: Generate JSDoc
+      - name: Generate JSDoc 📝
         run: yarn docs
 
       # Upload docs to GitHub Pages
-      - name: Deploy documentation to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy documentation to GitHub Pages 📚
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+          publish_dir: ./docs
 
   publish:
-    name: Publish to npm
+    name: Publish to npm ⚙️
     runs-on: ubuntu-latest
     needs: build
 
     steps:
       # Checkout repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout code 🛫
+        uses: actions/checkout@v4
 
       # Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Change from '16' to '18'
+          node-version: '20.x' # Change from '18' to '20'
           registry-url: 'https://registry.npmjs.org'
 
-      # Authenticate with npm
-      - name: Authenticate with npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       # Install dependencies
-      - name: Install dependencies
+      - name: Install dependencies 📦️
         run: yarn install
 
+      - name: Build 🔨
+        run: yarn build
+
       # Publish to npm
-      - name: Publish to npm
-        run: yarn publish --non-interactive
+      - name: Publishing 🚀
+        uses: simenandre/publish-with-yarn@v1
+        with:
+          npm-auth-token: ${{ secrets.NPM_TOKEN }}
