@@ -81,10 +81,10 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies 📦️
-        run: npm install
+        run: yarn install
 
       - name: Build 🔨
-        run: npm run build
+        run: yarn build
 
       # Verify dist contents
       - name: Verify dist contents 🕵️
@@ -92,6 +92,6 @@ jobs:
 
       # Publish to npm
       - name: Publishing 🚀
-        run: npm publish
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
