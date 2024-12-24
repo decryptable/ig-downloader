@@ -5,7 +5,6 @@
 ![Build Status](https://img.shields.io/github/actions/workflow/status/decryptable/ig-downloader/publish.yml)
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/decryptable/ig-downloader)
 
-
 **`ig-downloader`** is a powerful Node.js library for downloading and processing Instagram media data such as reels, posts, and stories with ease. 🚀
 
 ![Instagram Downloader GIF](https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif)
@@ -38,7 +37,53 @@ yarn add ig-downloader
 
 ## 🚀 Usage
 
-See in [example section](https://decryptable.github.io/ig-downloader/functions/index.InstagramDownloader.html#example) for more detailed usage.
+### CommonJS Example
+
+```javascript
+const IgDownloader = require("ig-downloader").IgDownloader;
+
+const urls = [
+  "https://www.instagram.com/p/DD6_fC1TkcK/?utm_source=ig_web_copy_link",
+];
+
+const fetchInstagramData = async () => {
+  for (const url of urls) {
+    try {
+      console.log(`Fetching data for: ${url}`);
+      const data = await IgDownloader(url);
+      console.log("Instagram Data:", data);
+    } catch (error) {
+      console.error(`Error fetching data for ${url}:`, error.message);
+    }
+  }
+};
+
+fetchInstagramData();
+```
+
+### ESModule Example
+
+```javascript
+import { IgDownloader } from "ig-downloader";
+
+const urls = [
+  "https://www.instagram.com/p/DD6_fC1TkcK/?utm_source=ig_web_copy_link",
+];
+
+const fetchInstagramData = async () => {
+  for (const url of urls) {
+    try {
+      console.log(`Fetching data for: ${url}`);
+      const data = await IgDownloader(url);
+      console.log("Instagram Data:", data);
+    } catch (error) {
+      console.error(`Error fetching data for ${url}:`, error.message);
+    }
+  }
+};
+
+fetchInstagramData();
+```
 
 ---
 
