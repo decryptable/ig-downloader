@@ -5,11 +5,11 @@
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
     "types": ["jest", "node"],
     "lib": ["es5"],
-    "outDir": "dist"
+    "outDir": "dist/esm",
+    "declarationDir": "dist/types",
+    "esModuleInterop": true
   },
   "include": ["src/ig-downloader.ts", "src/types", "src/utils"]
 }
