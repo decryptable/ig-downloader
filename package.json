@@ -1,16 +1,15 @@
 {
   "name": "ig-downloader",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Node.js library for downloading and processing Instagram media data such as reels, posts, and stories with ease.",
-  "main": "lib/ig-downloader.js",
+  "main": "dist/ig-downloader.js",
   "author": "decryptable",
   "license": "MIT",
   "readme": "README.md",
   "private": false,
-  "types": "lib/ig-downloader.d.ts",
+  "types": "dist/ig-downloader.d.ts",
   "files": [
     "dist",
-    "lib",
     "README.md",
     "LICENSE"
   ],
