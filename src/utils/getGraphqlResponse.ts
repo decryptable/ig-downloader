@@ -1,4 +1,3 @@
-import console = require("console");
 import fetch from "node-fetch";
 import { URLSearchParams } from "url";
 import { GraphqlResponse } from "../types/GraphqlResponse";
@@ -14,7 +13,9 @@ import { GraphqlResponse } from "../types/GraphqlResponse";
  * the Instagram API. If the request is successful, it will return the GraphQL response data. If there
  * is an error during the request, it will log an error message to the console.
  */
-const getGraphqlResponse = async (payload: URLSearchParams): Promise<GraphqlResponse> => {
+const getGraphqlResponse = async (
+  payload: URLSearchParams
+): Promise<GraphqlResponse> => {
   try {
     const response = await fetch("https://www.instagram.com/graphql/query", {
       method: "POST",
