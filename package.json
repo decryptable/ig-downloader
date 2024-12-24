@@ -8,7 +8,6 @@
   "readme": "README.md",
   "private": false,
   "types": "lib/ig-downloader.d.ts",
-  "type": "module",
   "files": [
     "dist",
     "lib",

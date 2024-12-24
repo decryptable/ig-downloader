@@ -1,4 +1,4 @@
-import { InstagramDownloader } from "..";
+import { IgDownloader } from "ig-downloader";
 
 /* The `const urls` array is storing two Instagram URLs. Each URL points to a specific Instagram post
 or reel. These URLs are used in the `fetchInstagramData` function to fetch data from Instagram using
@@ -13,7 +13,7 @@ const fetchInstagramData = async () => {
   for (const url of urls) {
     try {
       console.log(`Fetching data for: ${url}`);
-      const data = await InstagramDownloader(url);
+      const data = await IgDownloader(url);
       console.log("Instagram Data:", data);
     } catch (error) {
       console.error(
