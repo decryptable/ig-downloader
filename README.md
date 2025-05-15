@@ -1,5 +1,8 @@
 # 📸 Instagram Downloader
 
+> [!CAUTION]
+> **This library is no longer available because the API provider for this library is no longer working properly. Please check out the all-downloader library which supports video downloads for more sites. Please check out the [all-downloader](https://www.npmjs.com/package/all-downloader) library which supports video downloads for more sites.**
+
 ![npm](https://img.shields.io/npm/v/ig-downloader)
 ![GitHub Release](https://img.shields.io/github/v/release/decryptable/ig-downloader)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/decryptable/ig-downloader/publish.yml)
